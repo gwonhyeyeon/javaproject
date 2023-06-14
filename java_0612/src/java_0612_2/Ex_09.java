@@ -40,7 +40,7 @@ interface Maximum<T extends Comparable<T>> {
 }
 
 public class Ex_09 {
-d
+
 	public static void main(String[] args) {
 		Integer[] inum = { 1, 2, 3, 4, 5};
 		Double [] dnum = { 1.0, 2.0, 3.0, 4.0, 5.0};

@@ -24,8 +24,7 @@ public class FruitTest {
 			
 			}else {
 				map.put(fruit[i], 1);
-			}
-				
+			}		
 	}
 		System.out.println("과일 개수 출력하기");
 		System.out.println("===================");
