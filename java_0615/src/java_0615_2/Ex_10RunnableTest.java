@@ -8,9 +8,6 @@ import java.awt.event.MouseListener;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-
-
-
 class TimerRunnable implements Runnable {
 	private JLabel timerLabel;
 	
