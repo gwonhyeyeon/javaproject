@@ -55,7 +55,8 @@ class GamePanel extends JPanel {
 		targetLabel.setLocation(0,0);
 		//베이스, 총알, 타겟의 위치 설정 베이스와 총알은 사진크기를 기반으로 설정
 		targetThread = new TargetThread(targetLabel);
-		targetThread.start(); baseLabel.requestFocus();
+		targetThread.start(); 
+		baseLabel.requestFocus();
 		baseLabel.addKeyListener(new KeyAdapter() {
 			//베이스 라벨에 키리스너 추가 어댑터 사용, 무명 클래스 
 			BulletThread bulletThread = null; //블릿스레드 레퍼런스타입 변수 생성

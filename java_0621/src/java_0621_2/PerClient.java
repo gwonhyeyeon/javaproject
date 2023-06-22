@@ -10,9 +10,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-
-
-
 public class PerClient extends Thread{
 /*동기화된 arrayList를 생성하여 PrintWriter만 들어갈 수 있는 List로 업 캐스팅
  * static으로 지정하여 객체 생성이 안되어 perClient객체들의 고유 데이터로 설정하고 

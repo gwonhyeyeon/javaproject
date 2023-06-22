@@ -2,8 +2,6 @@ package java_0620_1;
 
 import java.awt.event.KeyEvent;
 
-
-
 class Missile extends GraphicObject {
 	boolean launched = false;
 
