@@ -61,12 +61,16 @@ public class GalagaGame extends JPanel implements KeyListener {
 			for (int x = 0; x < 12; x++) {
 				Sprite alien = new AlienSprite(this, alienImage, 
 										00 + (x * 50), 50 + (y * 30));
+				Sprite alien2 = new AlienSprite2(this, alienImage,
+										500+  (x * 50), 50 + (y * 30));
 //순서대로 저장소에 저장
-				sprites.add(alien);				
+				sprites.add(alien);	
+				sprites.add(alien2);
 			}
 		}
 	}
 
+	
 //게임 시작 : 저장소를 비우고 다시 채움
 	private void startGame() {
 		sprites.clear();
@@ -81,13 +85,15 @@ public class GalagaGame extends JPanel implements KeyListener {
 //유닛 삭제 : 전달 받은 유닛을 저장소에서 삭제
 	public void removeSprite(Sprite sprite) {
 		sprites.remove(sprite);
+		
 	}
 //탄환 생성 : 탄환 생성 후 저장소에 저장
 	public void fire() {
 		ShotSprite shot = new ShotSprite(this, shotImage, 
 				            starship.getX() + 10, starship.getY() - 30);
-		sprites.add(shot);		
+		sprites.add(shot);
 	}
+
 
 //그리기 오버라이딩
 	@Override
@@ -106,11 +112,13 @@ public class GalagaGame extends JPanel implements KeyListener {
 //게임 진행
 	public void gameLoop() {
 //게임 실행중 여부 플래그에 따라 반복 진행/정지
+		ShotSprite2 shot2 = new ShotSprite2(this, shotImage, 0, 0);
 		while (running) {
 //저장소에 저장한 객체 모두 움직임
 			for (int i = 0; i < sprites.size(); i++) {
 				Sprite sprite = (Sprite) sprites.get(i);
 				sprite.move();
+				
 			
 				
 			}

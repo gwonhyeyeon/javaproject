@@ -33,5 +33,10 @@ public class ShotSprite extends Sprite {
 			game.removeSprite(this);
 			game.removeSprite(other);
 		}
+		if (other instanceof AlienSprite2) {
+//나와 적 모두 제거
+			game.removeSprite(this);
+			game.removeSprite(other);
+		}
 	}
 }

@@ -30,7 +30,6 @@ public class Sprite {
 	}
 //이미지 움직임
 	public void move() {
-	
 		x += dx;
 		y += dy;
 	}
