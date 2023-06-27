@@ -16,8 +16,8 @@ public class DbConn {
 	 if(dbConn == null) {
 		try {
 			String url = "jdbc:oracle:thin:@localhost:1521:xe";
-			String user = "scott";
-			String pwd = "tiger";
+			String user = "system";
+			String pwd = "1234";
 			//oracle jdbc 드라이버를 로드합니다. 
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			dbConn = DriverManager.getConnection(url, user, pwd);

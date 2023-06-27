@@ -9,13 +9,13 @@ import java.io.File;
 import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 
-class MyPanel extends JPanel {
+class MyPanel2 extends JPanel {
 	BufferedImage img = null;
 	//자동차 초기 위치 설정한다. 
 	int img_x = 100;
 	int img_y = 100;
 	
-	public MyPanel() {
+	public MyPanel2() {
 		try {
 			//해당 경로에 잇는 이미지 파일 객체 생성
 			img = ImageIO.read(new File("C://temp//car1.gif"));
