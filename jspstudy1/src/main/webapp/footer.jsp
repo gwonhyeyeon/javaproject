@@ -24,7 +24,7 @@ bg-dark : 네비게이션 바 배경 색 어둡게
 			<div class="navbar-header">
 				<!-- navbar-brand : 회사명이나 제품명, 프로젝트명 등 표시 -->
 				<!-- Home 누르면 Welcome01.jsp 페이지로 이동 -->
-				<a class="navbar-brand" href="./Welcome01.jsp">Home</a>
+				<a class="navbar-brand" href="./welcome01.jsp">Home</a>
 			</div>
 		</div>
 	</nav>
